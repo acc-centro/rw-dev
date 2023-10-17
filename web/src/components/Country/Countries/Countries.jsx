@@ -42,7 +42,7 @@ const CountriesList = ({ countries }) => {
             <th>Id</th>
             <th>Name</th>
             <th>Region</th>
-            <th>&nbsp;</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
