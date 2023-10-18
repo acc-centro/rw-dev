@@ -12,7 +12,7 @@ const DELETE_COUNTRY_MUTATION = gql`
   }
 `
 
-const Country = ({ country, countries }) => {
+const Country = ({ country }) => {
   const [deleteCountry] = useMutation(DELETE_COUNTRY_MUTATION, {
     onCompleted: () => {
       toast.success('Country deleted')
@@ -69,16 +69,6 @@ const Country = ({ country, countries }) => {
           Delete
         </button>
       </nav>
-      <hr />
-      <h2>Countries</h2>
-      <ul>
-        {countries.map((co) => (
-          <li key={co.id}>
-            <p>Name: {co.name}</p>
-            <p>Region: {co.region}</p>
-          </li>
-        ))}
-      </ul>
     </>
   )
 }

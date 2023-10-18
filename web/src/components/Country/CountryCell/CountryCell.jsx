@@ -7,11 +7,6 @@ export const QUERY = gql`
       name
       region
     }
-    countries {
-      id
-      name
-      region
-    }
   }
 `
 
@@ -23,6 +18,6 @@ export const Failure = ({ error }) => (
   <div className="rw-cell-error">{error?.message}</div>
 )
 
-export const Success = ({ country, countries }) => {
-  return <Country country={country} countries={countries} />
+export const Success = ({ country }) => {
+  return <Country country={country} />
 }
