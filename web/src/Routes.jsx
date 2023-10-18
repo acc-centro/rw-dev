@@ -27,7 +27,7 @@ const Routes = () => {
         <Route path="/cars" page={CarCarsPage} name="cars" />
       </Set>
       <Set wrap={ScaffoldLayout} title="Countries" titleTo="countries" buttonLabel="New Country" buttonTo="newCountry">
-        <Route path="/" page={HomePage} name="home" />
+        <Route path="/home" page={HomePage} name="home" />
         <Route path="/countries/new" page={CountryNewCountryPage} name="newCountry" />
         <Route path="/countries/{id:Int}/edit" page={CountryEditCountryPage} name="editCountry" />
         <Route path="/countries/{id:Int}" page={CountryCountryPage} name="country" />
